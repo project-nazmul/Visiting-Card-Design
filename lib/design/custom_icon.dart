@@ -8,21 +8,16 @@ class CustomIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(3),
-      padding: const EdgeInsets.all(2),
-      width: 40,
-      decoration: const BoxDecoration(
-          color: Colors.white,
-        shape: BoxShape.circle
-      ),
-      child: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(img),
-            fit: BoxFit.fitWidth
-          ),
-          shape: BoxShape.circle
+      margin: EdgeInsets.all(5),
+      height: 30,
+      width: 30,
+      decoration: BoxDecoration(
+        border: Border.all(width: 2,color: Colors.white),
+        image: DecorationImage(
+          image: AssetImage(img),
+          fit: BoxFit.fitWidth
         ),
+        shape: BoxShape.circle
       ),
     );
   }

@@ -6,22 +6,14 @@ class ProfilePicture extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(3),
-      margin: const EdgeInsets.all(40),
-        decoration: const BoxDecoration(
-            color: Colors.white,
-            shape: BoxShape.circle
-        ),
+      decoration:  BoxDecoration(
+        image: const DecorationImage(fit:BoxFit.cover,image: AssetImage('image/n6.jpg')),
+        color: Colors.blue,
+        shape: BoxShape.circle,
+        border: Border.all(width: 3,color: Colors.white)
+      ),
 
-      child: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(fit:BoxFit.cover,image: AssetImage('image/n6.jpg')),
-          color: Colors.blue,
-          shape: BoxShape.circle
-        ),
-
-        padding: const EdgeInsets.all(25),
-      )
+      margin: const EdgeInsets.all(50),
     );
   }
 }
